@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HelloWorld from './components/DatePicker'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+      DatePicker
   }
 }
 </script>
