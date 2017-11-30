@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <DatePicker/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/DatePicker'
+import DatePicker from './components/DatePicker.vue'
 
 export default {
   name: 'app',
