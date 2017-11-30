@@ -1,21 +1,20 @@
 <template>
     <div id="app">
-        <DatePicker/>
-        {{ now }}
+        <DatePicker :now="now()"></DatePicker>
     </div>
 </template>
 
 <script>
     import DatePicker from './components/DatePicker.vue'
-    import dateApi from './api/date';
+    import {now} from './api/date';
 
     export default {
         name: 'app',
         components: {
             DatePicker
         },
-        computed: {
-            ...dateApi
+        methods: {
+            now
         }
     }
 </script>
